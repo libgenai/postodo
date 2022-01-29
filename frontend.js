@@ -25,10 +25,9 @@ class App extends Preact.Component {
 	fetchTasks(){
 		fetch(window.postgrest_url + "?order=id.asc", {
 			method: "GET",
-			headers: {
-				"Content-Type":"application/json",
-				"Authorization": `Bearer ${window.postgrest_token}`,
-			},
+			headers: Object.assign(
+				{"Content-Type":"application/json"},
+				window.postgrest_token && {"Authorization": `Bearer ${window.postgrest_token}`})
 		}).then((resp) => {
 			return resp.json();
 		}).then((data) => {
