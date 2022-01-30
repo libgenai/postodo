@@ -11,9 +11,11 @@ PGRST_RAW_MEDIA_TYPES=text/html PGRST_DB_URI=postgres://postgrest:mysecretpasswo
 ```
 
 - Your ToDo app is now ready at http://localhost:3000/rpc/homepage
+- Anonymous users will be able to see two existing tasks, but they won't be able to create/update/delete
+- If you used the same secret and role name as given, you can use this token to login as a user: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidG9kb191c2VyIn0.xXy_2x-iYau-SKFi_XTulaRvfQ6MXx9P5M-AqxOKbs8`
+- After logging in, user can create/update/delete their own tasks, but not anybody else's - even if they attempt direct API calls
 - For real-world usage, you will also need nginx/caddy in front of postgrest to handle domain name, SSL certificate etc.
 - Also, see [how to harden the security for postgREST](https://postgrest.org/en/stable/admin.html)
-
 
 ### Debug
 

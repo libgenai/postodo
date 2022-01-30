@@ -86,8 +86,8 @@ BEGIN
         window.postgrest_url = "http://localhost:3000/tasks";
         window.postgrest_token = localStorage.getItem("postgrest_token");
     </script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/polyglotnetwork/postodo/frontend.js" 
-      integrity="sha384-fvEq0R379ASuT/o/J9Kq39BRGemDlafwx6S20HOPvu4qTyQjAzv9NEQMgoL0Lcyv" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/gh/polyglotnetwork/postodo@0.1.0/frontend.js" 
+      integrity="sha384-t46M0SgRKdyr+MlA2L+u8UFnVg5/UUWGcVc5iiWn+UVJhSXN+Tgnyv9Pmwinu8ZW" crossorigin="anonymous">
     </script>
   </body>
 </html>';
