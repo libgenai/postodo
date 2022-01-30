@@ -1,4 +1,4 @@
-# SQL and JS is all you need
+# backend.sql + frontend.js = ❤️❤️❤️
 
 This is an example app built with PostgREST to show a new way to ship open-source apps for self-hosting. [This article]() explains the motivation and a step-by-step explanation, but in short, we define the schema, postgREST can serve both the initial HTML page as well as a full-fledged and secure REST api. The HTML page then loads the via Javascript from CDN which makes use of the REST api. In essence, there is only [backend.sql] and [frontend.js] to worry about. The user runs `backend.sql` on her database, and the developers maintain `frontend.js` on a CDN.
 

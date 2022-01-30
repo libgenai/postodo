@@ -67,7 +67,7 @@ insert into todo.tasks (name) values
 
 
 
--- This function will response to GET requests on /rpc/homepage
+-- This function will respond to GET requests on /rpc/homepage
 -- change the value of postgrest_url as per your setup: https, domain, port etc
 
 CREATE OR REPLACE FUNCTION todo.homepage() RETURNS varchar AS $$
@@ -94,4 +94,5 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql IMMUTABLE;
 
+-- anon users should be able to access the homepage
 GRANT EXECUTE ON FUNCTION todo.homepage TO web_anon;
