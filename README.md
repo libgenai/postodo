@@ -10,6 +10,8 @@ PGRST_RAW_MEDIA_TYPES=text/html PGRST_DB_URI=postgres://postgrest:mysecretpasswo
 
 ```
 
+![screenshot](https://2285905252-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCUR9BVfcFBOQFL62VyFA%2Fuploads%2FFctrW1OyJA27PjO5meoh%2Fimage.png?alt=media&token=54e1653a-9a51-4220-9ff6-b1469290d30f)
+
 - Your ToDo app is now ready at http://localhost:3000/rpc/homepage
 - Anonymous users will be able to see two existing tasks, but they won't be able to create/update/delete
 - If you used the same secret and role name as given, you can use this token to login as a user: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidG9kb191c2VyIn0.xXy_2x-iYau-SKFi_XTulaRvfQ6MXx9P5M-AqxOKbs8`
